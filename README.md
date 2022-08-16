@@ -19,7 +19,7 @@ Don't worry! All your projects are still here! We use branches to snapshot all t
 
 All code in this repository is published and distributed under `GPLv3`. See `LICENSE` for more information.
 
-## Sponsors
+## Organizers
 
 <p align="center">
   <a href="https://www.sola-prihodnosti.si/en/"><img src="https://www.sola-prihodnosti.si/wp-content/uploads/SPM.svg" width="200"></a>
