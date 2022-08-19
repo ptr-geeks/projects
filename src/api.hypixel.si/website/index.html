@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/logo.png" type="image/png" sizes="32x32">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;700&display=swap" rel="stylesheet">
+    <title>stat.hypixel.si</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/btn.css">
+    <link rel="stylesheet" href="./css/circular_progress.css">
+    <style>
+        body {
+            background-image: url("./img/bak1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0;
+            min-height: 100vh;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="topnavbar">
+        <a href="./index.html" class="active">Domov</a>
+        <a href="./clani.html">Člani Guilda</a>
+        <a href="./stat.html">Stat Guilda</a>
+        <a href="javascript:void(0);" class="icon" onclick="meni()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <br>
+        <div id="content" align="center">
+            <div style="color:white;font-family: 'Dosis', sans-serif;font-size: 18px;padding:0 15px;" align="left">
+                <h2><b>HYPIXEL SLOVENIJA Guild</b></h2>
+                <br>
+                <br>
+            <p2><i>Kaj je Guild?</i></p2>
+            <p>Skupina na Hypixel-u, ki ti omogoča, da s prijatelji dobiš <b>Guild expirience</b> ter posebne <b>Achievemente</b>.</p>
+            <p2><i>Kaj imam od tega, da sem v Guildu?</i></p2>
+            <p>Dobiš več <b>Hypixel Expirienca</b>, <b>Coinov</b> ter odkleneš posebne <b>Cosmetice, ter kulski tag </b> <span class="fontsforweb_fontid_1412" style="color:yellow;padding:0 5px ; /*background-color: rgba(255, 255, 255, 1.0);*/">[SLO]</span>.</p>
+            <p2><i>Katere pogoje moram imeti izpolnjene, da se lahko Guildu pridružim?</i></p2>
+             <p>Biti moraš <b>Hypixel Level</b> vsaj <b>25</b> ter igrati na Hypixlu vsaj enkrat na teden.</p>
+            
+            <p2><i>Kako se Guildu pridružim?</i></p2>
+            <p>Če izpolnjuješ pogoje v Hypixelu napišeš <b>/g join Hypixel Slovenija</b> in počakaš da te Veteran sprejme vanj.</p>
+            <br>
+            
+            <p>Roli v Guildu / Discord Serverju:</p>
+            <ul>
+                <li>Guild Master</li>
+                <li>Master</li>
+                <li>Officer</li>
+                <li>Professional</li>
+                <li>Veteran</li>
+                <li>Guild Member</li>
+            </ul>
+            </div>
+            <div class="btn-group" align="center">
+                <button class="button">
+                  <img src="https://d33wubrfki0l68.cloudfront.net/b7515b2e7542fd2f60cf73d5387a9205862af415/ee080/img/medal.png" width="90px" height="auto">
+                  <h3 style="font-size:35px;color:black;"><span id="guildLevel">0</span></h3>
+                    <p style="color:black;font-size:13px;">Guild level</p>
+                </button>
+                <button class="button">
+                  <img src="https://d33wubrfki0l68.cloudfront.net/b2f254a4dd44cf9735b84c8043f9c601196d2142/4155c/img/user.png" width="50px" height="auto">
+                  <h3 style="font-size:35px;color:black;"><span id="guildMembers">0</span><small>/125</small></h3>
+                    <p style="color:black;font-size:13px;">Guild members</p>
+                </button>
+                </div>
+        </div>
+    <script src="./js/main_script.js"></script>
+    <script src="./js/progressbar.js"></script>
+</body>
+</html>

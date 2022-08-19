@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/logo.png" type="image/png" sizes="32x32">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;700&display=swap" rel="stylesheet">
+    <title>stat.hypixel.si/stat</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/circular_progress.css">
+    <style>
+        body {
+            background-image: url("./img/bak3.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0;
+            min-height: 100vh;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="topnavbar">
+        <a href="./index.html">Domov</a>
+        <a href="./clani.html">Člani Guilda</a>
+        <a href="./stat.html" class="active">Stat Guilda</a>
+        <a href="javascript:void(0);" class="icon" onclick="meni()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div id="kontent" align="center">
+            <h1 style="color:white;">Statistika guilda</h1>
+            <br>
+            <div id="line_chart"></div>
+            <br>
+            
+        </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/chart.js"></script>
+</body>
+</html>

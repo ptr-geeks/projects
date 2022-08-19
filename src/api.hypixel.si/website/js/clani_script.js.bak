@@ -1,0 +1,28 @@
+async function getData(){
+    fetch('http://localhost:8080/guild/')
+    .then(response => response.json())
+    .then(data => {
+        let uuidji = data.guild.members.map((clan) => {return clan.uuid;});
+        console.log(uuidji);
+        let memberData = uuidji.forEach(userLookUp)
+        return memberData;
+    })
+};
+
+function izris(){
+    memberData = getData();
+    clani = memberData.map(prikazClanov);
+    document.getElementById("list").innerHTML = '<h3>Člani</h3>' + '<ol start="0"><li><b>Username</b></li>' + clani + '</ol>';
+   
+    function prikazClanov(clan){
+        return '<li>' + clan.player.displayName + '</li>'
+    }
+}
+
+async function userLookUp(uuid) {
+    fetch('http://localhost:8080/player/uuid/' + uuid)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    });
+}
