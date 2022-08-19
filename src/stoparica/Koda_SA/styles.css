@@ -1,0 +1,85 @@
+body {
+    background-color:#ff000000;
+   background-image: url('Ura.jfif');
+   cursor: crosshair;
+   user-select: none;
+    /*animation: mymove 10s infinite;*/
+
+}
+/*@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+  }*/
+.mainButtons {
+    background-color: #f79400;
+    color: #ffff;
+    font-size: 70px;
+    border-radius: 8px;
+    border: 2px solid #f6ff00; 
+    transition-duration: 0.4s;
+    margin-top: 50px;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: #f6ff00;
+    color: burlywood;
+    transition-duration: 0.4s;
+}
+button:active {
+    box-shadow: 0 9px #666;
+    transform: translateY(4px);
+}
+#Start{
+    margin-left: 485px;
+}
+
+#Stop{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Clock {
+    margin: top 20px;
+    font-size: 150px;
+}
+
+h1 {
+    text-align: center;
+    color: #f79400;
+    font-size: 600%;
+    text-shadow: 5px 5px 5px red;
+}
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+#pik{
+    font-size:70px;
+  }
+input {
+    margin-left: 600px;
+    background-color: #7977f7;
+    color: #ffff;
+    font-size: 30px;
+    cursor: pointer;
+}
+#Sec {
+    margin-left: 600px;
+}
+#AlarmButt{
+    background-color: #f70000;
+    color: #ffff;
+    font-size: 40px;
+    border-radius: 8px;
+    border: 2px solid #f6ff00; 
+    transition-duration: 0.4s;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#Circle{
+    font-size:100px;
+    margin-left: 735px;
+}
+.Alarm{
+    color: red;
+}
