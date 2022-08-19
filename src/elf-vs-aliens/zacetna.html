@@ -1,0 +1,29 @@
+<html>
+    <head>
+        
+        <title>Elf vs Aliens</title>
+        <link rel="icon" type="image/x-icon" href="slike/sword ikona2.png">
+        <style>
+           * { margin:0; padding:0;; }
+            body { overflow: hidden;
+            background-image: url(slike/ozadje2.jpg);
+            background-size: 1600px 920px; }
+            img{ margin-left: 550px; margin-top: 180px;}
+            
+        </style>
+    </head>
+    <body>
+        <img src="slike/start.png" width="400" height="400" usemap="#workmap">
+        <map name = "workmap">
+            <area shape="rect" coords="canvas.width/2, canvas.height/2, 400, 400" href="glavna.html">
+        </map>
+        <audio id="menuaudio" loop>
+            <source src="slike/awesomeness.mp3" type="audio/mpeg">
+
+        </audio>
+        <script>
+            var menuaudio = document.getElementById("menuaudio");
+            menuaudio.play()
+        </script>
+    </body>
+</html>
