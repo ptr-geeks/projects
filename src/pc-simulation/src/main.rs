@@ -3,7 +3,7 @@ pub mod content;
 extern crate sdl2;
 extern crate stopwatch;
 
-const MSPT: i64 = 0;
+const MSPT_OPTIONS: [i64; 11] = [9223372036854775807, 1000, 500, 200, 100, 50, 20, 10, 5, 2, 0];
 use std::fmt::format;
 use std::ops::Deref;
 use sdl2::render::WindowCanvas;
@@ -19,6 +19,9 @@ fn get_color(component_type: ComponentType, enabled: bool) -> (u8, u8, u8){
 }
 
 fn draw_pixel(color: (u8, u8, u8), transform: (i32, i32, u32, u32), canvas: &mut WindowCanvas){
+    if transform.0 + (transform.2 as i32) < 0 || transform.0 > (WIDTH as i32 * 2) || transform.1 + (transform.3 as i32) < 0 || transform.1 > (HEIGHT as i32 * 2){
+        return;
+    }
     canvas.set_draw_color(sdl2::pixels::Color::RGB(color.0, color.1, color.2));
     canvas.fill_rect(sdl2::rect::Rect::new(transform.0, transform.1, transform.2, transform.3)).expect("couldn't draw");
 
@@ -151,6 +154,10 @@ fn main_update(canvas: &mut sdl2::render::WindowCanvas, event_pump: &mut sdl2::E
                         }
                     }
                 }
+                sdl2::event::Event::KeyDown {keycode: Some(sdl2::keyboard::Keycode::S), ..} => {
+                    misc_data.selected_mspt += 1;
+                    misc_data.selected_mspt = misc_data.selected_mspt % 11;
+                }
                 sdl2::event::Event::MouseButtonDown {mouse_btn: sdl2::mouse::MouseButton::Left, ..} => {
                     if misc_data.paste.0{
                         paste_selection(&mut component_data, &mut misc_data.copied_data, misc_data.paste.1.0, misc_data.paste.1.1);
@@ -184,8 +191,10 @@ fn main_update(canvas: &mut sdl2::render::WindowCanvas, event_pump: &mut sdl2::E
                 sdl2::event::Event::MouseButtonUp {mouse_btn: sdl2::mouse::MouseButton::Middle, ..} => {
                     if misc_data.mouse_pos_on_middle_press.0 == mouse_x && misc_data.mouse_pos_on_middle_press.1 == mouse_y{
                         let pos = component_data.translate_mouse_pos(mouse_x as f32, mouse_y as f32);
-                        if component_data.array[pos.0 as usize][pos.1 as usize].component_type != ComponentType::NOTHING{
-                            misc_data.selected_type = component_data.array[pos.0 as usize][pos.1 as usize].component_type;
+                        if ComponentData::are_coordinates_in_bounds(pos.0, pos.1){
+                            if component_data.array[pos.0 as usize][pos.1 as usize].component_type != ComponentType::NOTHING{
+                                misc_data.selected_type = component_data.array[pos.0 as usize][pos.1 as usize].component_type;
+                            }
                         }
                     }
                 }
@@ -193,7 +202,7 @@ fn main_update(canvas: &mut sdl2::render::WindowCanvas, event_pump: &mut sdl2::E
             }
         }
         if misc_data.run_sim /* timed update*/ {
-            if misc_data.stopwatch.elapsed_ms() - misc_data.last_time > MSPT {
+            if misc_data.stopwatch.elapsed_ms() - misc_data.last_time > MSPT_OPTIONS[misc_data.selected_mspt as usize] {
                 misc_data.last_time = misc_data.stopwatch.elapsed_ms();
                 component_data.update_canvas();
             }

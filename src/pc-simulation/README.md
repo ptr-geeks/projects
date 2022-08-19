@@ -18,6 +18,7 @@ For now you have to start it through an ide or terminal to get component names i
  - Del: Erase selected area
 ###  Simulation mode:
  - Left click: Toggle latches
+ - S: Change simulation speeds (includes pause)
 ###  Both modes
  - Space: Toggle simulation mode/Edit mode
  - Up arrow/down arrow keys: Zoom
@@ -29,4 +30,4 @@ For now you have to start it through an ide or terminal to get component names i
 - Latches switch their state when powered and have a manual ooverride (click)
 - Everything that isn't a wire, wire reader or wire writer counts as a gate so technically you could even output a signal from a light
 
-Set mspt (miliseconds per tick) and save path in main.rs at the top. Yes, this program saves your progress
+The program saves your progress in the same dir as the executable
