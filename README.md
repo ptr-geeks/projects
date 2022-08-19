@@ -9,7 +9,7 @@
 
 ## About
 
-This repository is a collection of all the educational projects that were developed by attendees of our Summer Camp for Computer Science (Poletni tabor računalništva).
+This repository is a collection of all the educational projects that were developed by attendees of our Summer Camp for Computer Science (Poletni tabor računalništva). For more than a decade, a team of seasoned coder monkeys has been evangelizing beauties of programming to youngsters from the whole country.
 
 ## What about previous years?
 
