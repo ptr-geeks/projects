@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>   
+    
+    <ul>
+        <li><a class="active" href="/">Domača stran</a></li>
+        <li style="float:right"><a href="/login">Prijava</a></li>
+        <li style="float:right"><a href="/registration">Registracija</a></li>
+    </ul> 
+    <div class="center">
+        <div>
+            <h2 class="center">Prijava</h2>
+            <div class="center">
+                <div>
+
+                    <form action="login" method="POST">
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="password">Geslo</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="center">
+                            <button type="submit" class="button">Prijava</button>
+                        </div>
+                    </form>
+                    
+                    <div class="center">
+                        <div class="center">
+                            <a href="lostpassword" target="_blank" class="lost_password">Pozabljeno geslo</a>
+                        </div>
+                        
+                        <% if (messages.error) { %>
+                            <%= messages.error %>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
