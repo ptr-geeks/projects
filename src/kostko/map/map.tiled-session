@@ -1,0 +1,91 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "C:/Users/PTR/Downloads/untitled (1).tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        ":/automap-tiles.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/PTR/Downloads/map (1).json": {
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 443.9999999999999,
+                "y": 142.66666666666669
+            }
+        },
+        "C:/Users/PTR/Downloads/map (1).json#ozadje": {
+            "scaleInDock": 1
+        },
+        "C:/Users/PTR/Downloads/phaser-template-example-complete/phaser-template-example-complete/map/map.tmx": {
+            "scale": 0.5413020833333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 960.6465890503223,
+                "y": 513.5764456845955
+            }
+        },
+        "C:/Users/PTR/Downloads/untitled (1).tmx": {
+            "scale": 0.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 902,
+                "y": 500
+            }
+        },
+        "C:/Users/PTR/Downloads/untitled (1).tmx#ozadje": {
+            "scaleInDock": 1
+        },
+        "C:/Users/PTR/Downloads/untitled.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 2166.6666666666665,
+                "y": 1072.7272727272725
+            }
+        },
+        "C:/Users/PTR/Downloads/untitled.tmx#ozadje": {
+            "scaleInDock": 1
+        },
+        "map.tmx": {
+            "scale": 0.5413020833333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 846.1079572789378,
+                "y": 299.2783604349081
+            }
+        },
+        "map.tmx#sprites": {
+            "scaleInDock": 1
+        }
+    },
+    "last.exportedFilePath": "C:/Users/PTR/Downloads",
+    "last.imagePath": "/Users/davidm/src/github.com/ptr-geeks/phaser-template/src/assets",
+    "map.height": 16,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 64,
+    "map.tileWidth": 64,
+    "openFiles": [
+        "C:/Users/PTR/Downloads/untitled (1).tmx"
+    ],
+    "project": "map.tiled-project",
+    "recentFiles": [
+        "C:/Users/PTR/Downloads/untitled (1).tmx",
+        "C:/Users/PTR/Downloads/untitled.tmx",
+        "map.tmx",
+        "C:/Users/PTR/Downloads/phaser-template-example-complete/phaser-template-example-complete/map/map.tmx",
+        "C:/Users/PTR/Downloads/map (1).json"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 64,
+        "width": 64
+    }
+}
