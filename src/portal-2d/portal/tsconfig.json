@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "module": "es6",
+        "target": "es6",
+        "noImplicitAny": false,
+        "outDir": "dist",
+        "rootDir": "ts/",
+        "sourceMap": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "incremental": true
+    },
+    "include": [
+        "ts/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

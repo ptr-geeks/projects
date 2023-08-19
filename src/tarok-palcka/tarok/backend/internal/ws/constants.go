@@ -1,0 +1,5 @@
+package ws
+
+const DEFAULT_TIME = 45.0
+const DEFAULT_ADDITIONAL_TIME = 10.0
+const KLEPETALNICA_TIME = 180.0

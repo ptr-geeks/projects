@@ -1,0 +1,20 @@
+{
+  "name": "webpack.typescript",
+  "version": "1.0.0",
+  "description": "Webpack + TypeScript",
+  "main": "app.js",
+  "author": "Shane Osbourne and John Lindquist",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.8.0",
+    "ts-loader": "^0.8.1",
+    "typescript": "^5.1.6"
+  }
+}

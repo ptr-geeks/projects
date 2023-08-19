@@ -1,0 +1,10 @@
+aiosqlite
+py-cord
+python-dotenv
+requests==2.27.1
+aiohttp>=3.8.0 # not directly required, pinned by Snyk to avoid a vulnerability
+numpy
+Pillow
+PostBin
+scipy
+supabase

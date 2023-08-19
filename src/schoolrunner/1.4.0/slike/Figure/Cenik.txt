@@ -1,0 +1,6 @@
+Tohman, 0, 0.1, *1
+Telefonar, 200, 0.2, +100
+Jejinpij, 500, 0.15, *2
+Tunafor, 1000, 0.2, +500
+Punca, 10000, 0.25, *5
+Pifelmobil, 50000, 0.25, *6

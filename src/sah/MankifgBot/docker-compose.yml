@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  bot:
+    image: ghcr.io/mankifg/mankifgbot
+    volumes:
+      - ./config:/app/config
+    restart: always
+    environment:
+      - TOKEN=${TOKEN}
+      - NASA=${NASA}
+      - SUPA_URL=${SUPA_URL}
+      - SUPA_KEY=${SUPA_KEY}

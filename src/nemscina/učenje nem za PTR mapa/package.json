@@ -1,0 +1,37 @@
+{
+  "name": "ucenje_nem",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "prepare": "npm run smui-theme-light && npm run smui-theme-dark",
+    "smui-theme-light": "smui-theme compile src/smui.css -i src/theme",
+    "smui-theme-dark": "smui-theme compile src/smui-dark.css -i src/theme/dark"
+  },
+  "devDependencies": {
+    "@material/elevation": "^14.0.0",
+    "@material/theme": "^14.0.0",
+    "@material/typography": "^14.0.0",
+    "@smui-extra/accordion": "^7.0.0-beta.14",
+    "@smui/button": "^7.0.0-beta.14",
+    "@smui/drawer": "^7.0.0-beta.14",
+    "@smui/icon-button": "^7.0.0-beta.14",
+    "@smui/layout-grid": "^7.0.0-beta.14",
+    "@smui/select": "^7.0.0-beta.14",
+    "@smui/textfield": "^7.0.0-beta.14",
+    "@sveltejs/vite-plugin-svelte": "^2.0.4",
+    "@tsconfig/svelte": "^4.0.1",
+    "smui-theme": "^7.0.0-beta.14",
+    "svelte": "^3.58.0",
+    "svelte-check": "^3.3.1",
+    "svelte-material-ui": "^7.0.0-beta.14",
+    "svelte-navigator": "^3.2.2",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  }
+}

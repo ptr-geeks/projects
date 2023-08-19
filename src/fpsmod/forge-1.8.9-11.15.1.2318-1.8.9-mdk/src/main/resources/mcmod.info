@@ -1,0 +1,16 @@
+[
+{
+  "modid": "fpsmod6",
+  "name": "fpsmod6",
+  "description": "Best mod ever. Why? I made it.",
+  "version": "${1.0}",
+  "mcversion": "${1.8}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Paravo1d"],
+  "credits": "Paravo1d",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
