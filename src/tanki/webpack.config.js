@@ -23,7 +23,7 @@ module.exports = {
           context: 'src/'
         },
         {
-          from: 'assets/*',
+          from: 'assets/**',
           context: 'src/'
         }
       ]
